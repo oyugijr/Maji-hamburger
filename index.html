@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maji-website</title>
     <link rel="stylesheet" href="style.css">
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
 
 </head>
 <body>
+<header>
+  <nav>
+    <div class="logo"><a href="#Home"class="active">Home</a></div>
+    <!--<div class="menu-icon"id="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>-->
+    <input type="checkbox" id="menu-toggle"> 
+    <label for="menu-toggle" class="menu-icon"><span></span></label>
+        <ul class="menu">
+      <!--<li><a href="#Home"class="active">Home</a></li>-->
+      <li><a href="#News">News</a></li>
+      <li><a href="#Verification">Verification</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+  </nav>
 
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+</header>
 <script src="script.js"></script>
 </body>
 </html>

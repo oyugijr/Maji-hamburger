@@ -1,11 +1,13 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav")
-         {
-            x.className += " responsive";
-         }
-     else {
-      x.className = "topnav";
+document.addEventListener('DOMContentloaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.querySelector('.menu');
+  
+  menuToggle.addEventListener('change', function() {
+    if (menuToggle.checked) {
+        menu.style.display = 'flex';
     }
-  }
+    else {
+      menu.style.display = 'none';
+    }
+  });
+});
