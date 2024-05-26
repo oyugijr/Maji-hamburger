@@ -8,6 +8,12 @@ body {
 header {
     background-color: white;
     padding: 10px 0;
+    position: fixed;
+    left: 5rem;
+    right: 30px;
+    display: flex;
+    z-index: 100;
+    transition: 0.3s;
 }
 
 .navbar {
@@ -16,11 +22,16 @@ header {
     justify-content: space-between;
     padding: 0 20px;
 }
+.navbar.active{
+    left: 0;
+    transition-delay: 0s;
+}
 
 .logo a {
     color: #333;
     text-decoration: underline;
     font-size: 24px;
+    margin-left: 70px;
 }
 .logo a:hover {
   text-decoration: none;
@@ -28,7 +39,7 @@ header {
 
 .nav-links {
     list-style: none;
-    display: flex;
+    display: inline;
     margin: 0;
     padding: 0;
 }
@@ -41,6 +52,11 @@ header {
     color: #333;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+    justify-content: ;
+}
+.nav-links a:hover {
+    color: rgb(87, 228, 148);
 }
 
 .hamburger {
