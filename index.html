@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maji-hamburger</title>
-    <link rel="stylesheet" href="style.css">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-
-
+    <link rel="stylesheet" href="styles.css">
 </head>
+ 
 <body>
-<header>
-  <nav>
-    <div class="logo"><a href="#Home"class="active">Home</a></div>
-    <!--<div class="menu-icon"id="menu-icon">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>-->
-    <input type="checkbox" id="menu-toggle"> 
-    <label for="menu-toggle" class="menu-icon"><span></span></label>
-        <ul class="menu">
-      <!--<li><a href="#Home"class="active">Home</a></li>-->
-      <li><a href="#News">News</a></li>
-      <li><a href="#Verification">Verification</a></li>
-      <li><a href="#contact">Contact</a></li>
-     </ul>
-  </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Home</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+               <!-- <li><a href="#home">Home</a></li>-->
+                <li><a href="#about">News</a></li>
+                <li><a href="#services">Verification</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-</header>
-<script src="script.js"></script>
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+});
+
+    </script>
 </body>
 </html>
