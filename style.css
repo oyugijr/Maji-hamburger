@@ -8,12 +8,6 @@ body {
 header {
     background-color: white;
     padding: 10px 0;
-    position: fixed;
-    left: 5rem;
-    right: 30px;
-    display: flex;
-    z-index: 100;
-    transition: 0.3s;
 }
 
 .navbar {
@@ -39,7 +33,7 @@ header {
 
 .nav-links {
     list-style: none;
-    display: inline;
+    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -53,7 +47,6 @@ header {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    justify-content: ;
 }
 .nav-links a:hover {
     color: rgb(87, 228, 148);
