@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: dodgerblue;
+    line-height: 1.6;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px;
 }
 .navbar.active{
     left: 0;
@@ -40,12 +41,13 @@ header {
 
 .nav-links li {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-links a {
     color: #333;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 .nav-links a:hover {
@@ -73,13 +75,19 @@ header {
         width: 100%;
         background-color: white;
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 55px;
+        left: 0px;
+        right: 0;
+        padding: 12px;
     }
 
     .nav-links li {
-        text-align: center;
-        margin: 10px 0;
+        text-align: left;
+        margin-left: 20px;
+        top: 0;
+    }
+    .logo a {
+        margin-left: 20px;
     }
 
     .hamburger {
