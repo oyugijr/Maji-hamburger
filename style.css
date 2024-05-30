@@ -97,6 +97,7 @@ header {
 
     .hamburger {
         display: flex;
+        margin-right: 20px;
     }
 
     .nav-links.active {
