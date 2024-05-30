@@ -27,6 +27,7 @@ header {
     text-decoration: underline;
     font-size: 24px;
     margin-left: 70px;
+    font-weight: bold;
 }
 .logo a:hover {
   text-decoration: none;
@@ -88,7 +89,11 @@ header {
     }
     .logo a {
         margin-left: 20px;
+        text-decoration: none;
     }
+    .logo a:hover {
+        color: rgb(87, 228, 148);
+      }
 
     .hamburger {
         display: flex;
